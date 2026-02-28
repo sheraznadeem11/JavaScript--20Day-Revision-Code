@@ -17,5 +17,24 @@
 // netSalary=salary-tax
 // console.log("Net Salary :", netSalary);
 
+//if or else if //
+let salary=prompt("Enter salary ");;
+let tax;
+let taxRate;
 
+if(salary >= 0 && salary < 10000){
 
+  tax=5/100*salary;
+  taxRate="5%";
+}
+else if (salary >=10000 && salary<100000){
+ tax =10/100*salary;
+ taxRate="10%";
+}
+else if (salary>=100000){
+tax=20/100*salary;
+taxRate="20%";
+};
+console.log("Salary",salary);
+console.log("Tax",taxRate,":",tax);
+console.log("Net Salary", salary-tax);
