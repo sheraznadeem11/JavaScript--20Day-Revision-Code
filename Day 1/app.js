@@ -1,3 +1,5 @@
+//if else condation//
+
 //   let empName="Sheraz Nadeem";
 //   let salary=20000;
 //   let tax=0;
