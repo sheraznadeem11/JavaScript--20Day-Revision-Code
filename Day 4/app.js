@@ -1,6 +1,6 @@
-let i=2;
-while(i<=10){
+let i=50;
+while (i>=1)
+{
     console.log(i);
-    i+2;
+    i-=5;
 }
-
