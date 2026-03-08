@@ -4,5 +4,9 @@
 
 
 //Horizantal tab
-let data ="Your name : Sheraz\tNadeem"
+// let data ="Your name : Sheraz\tNadeem"
+// console.log(data);
+
+//Backspace
+let data ="Who are you\bSheraz\tNadeem"
 console.log(data);
