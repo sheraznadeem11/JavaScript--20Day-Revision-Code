@@ -12,5 +12,9 @@
 // console.log(data);
 
 //Double quote
-let data ="Your name : \"Sheraz Nadeem\""
+// let data ="Your name : \"Sheraz Nadeem\""
+// console.log(data);
+
+//Backslash
+let data ="Your name : \\Sheraz Nadeem\\"
 console.log(data);
