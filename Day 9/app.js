@@ -8,5 +8,9 @@
 // console.log(data);
 
 //Backspace
-let data ="Who are you\bSheraz\tNadeem"
+// let data ="Who are you\bSheraz\tNadeem"
+// console.log(data);
+
+//Double quote
+let data ="Your name : \"Sheraz Nadeem\""
 console.log(data);
