@@ -6,4 +6,4 @@
 
 //upper case // string
 const str="We are Learning JaVAscript"
-console.log(str.text.toupperCase());
+console.log(str.toLocaleUpperCase);
