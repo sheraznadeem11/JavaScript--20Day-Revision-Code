@@ -32,3 +32,21 @@
 // let sli=fruitName.slice(1,5);
 // console.log(fruitName);
 // console.log(sli)
+
+// Array Method Splice
+//  Add new value array use splice 
+// let fruitName=["Apple","Banana","Orange",];
+// let newFruit=fruitName.splice(2,0,"Dates");
+// console.log(fruitName);
+
+// Array splice remove
+// let fruitName=["Apple","Banana","Orange","Dates","PineApple","Grapes","Watermellon"];
+// let newFruit=fruitName.splice(1,4);
+// console.log(fruitName)
+
+
+// Arry use splice replce
+// let fruitName=["Apple","Banana","Orange","Dates","PineApple","Grapes","Watermellon"];
+// let newFruit=fruitName.splice(1,2,"Kevi","Barry");
+// console.log(fruitName)
+
