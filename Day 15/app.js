@@ -48,7 +48,38 @@
 // });
 
 //  for each multiplay
-let num=[1,3,4,5,6,7];
-num.forEach((x)=>{
-    console.log(x*x);
-});
+// let num=[1,3,4,5,6,7];
+// num.forEach((x)=>{
+//     console.log(x*x);
+// });
+
+
+
+//        ASSIGNMENT SOLVE //
+    // Question 1 Solve
+// let number=[2,4,5,6,7,8,9];
+// function square(x){
+//     return x * x;
+// }
+// for( i=0; i<number.length; i++)
+// console.log(`square of ${number[i]} or ${square(number[i])}`);
+
+
+// Quesion 2 Solve
+// let number=[2,4,5,6,7,8,9];
+// number.forEach(function(item){
+//     console.log(item * item)
+// })
+
+// Question 2 solve
+// let number=[2,4,5,6,7,8,9];
+// number.forEach((item)=>{
+//     console.log("arrow funtion",item * item)
+// })
+
+// Extra use solve quesion 
+
+let number=[2,4,5,6,7,8,9];
+number.forEach((item,index,array)=>{
+    console.log(`Arrow function use ${item *item}or${index} :or: ${array}`)
+})
