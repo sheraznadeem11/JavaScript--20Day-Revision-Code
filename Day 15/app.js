@@ -79,7 +79,14 @@
 
 // Extra use solve quesion 
 
-let number=[2,4,5,6,7,8,9];
-number.forEach((item,index,array)=>{
-    console.log(`Arrow function use ${item *item}or${index} :or: ${array}`)
+// let number=[2,4,5,6,7,8,9];
+// number.forEach((item,index,array)=>{
+//     console.log(`Arrow function use ${item *item}or${index} :or: ${array}`)
+// })
+
+
+        // Map()
+let num=[2,3,4,6,8,9,11];
+num.map(val=>{
+    console.log(`square of ${val} : or ${val *val}`)
 })
