@@ -22,8 +22,33 @@
 
 
 // Assignment number 2
-function oddNumber(x){
-    return x %2 === 0;
-}
-let odNUm=oddNumber(23);
-console.log("Is Number Even: ",odNUm);
+// function oddNumber(x){
+//     return x %2 === 0;
+// }
+// let odNUm=oddNumber(23);
+// console.log("Is Number Even: ",odNUm);
+
+
+
+// for Each
+// let color=['Green','orange','blue','gray','pink'];
+// color.forEach((item)=>{
+//     console.log(item);
+// });
+    // print item index Array
+// color.forEach((item,index,array)=>{
+//     console.log(`Print Color Value : ${item.toUpperCase()} :${index} ${array}`)
+// })
+
+
+// print NUmber 
+// let num=[1,3,4,5,6,7];
+// num.forEach((x)=>{
+//     console.log(x+x);
+// });
+
+//  for each multiplay
+let num=[1,3,4,5,6,7];
+num.forEach((x)=>{
+    console.log(x*x);
+});
