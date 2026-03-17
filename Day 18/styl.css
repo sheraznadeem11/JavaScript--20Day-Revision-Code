@@ -1,0 +1,27 @@
+.main{
+    background-color: black;
+    text-align: center;
+    height: 400px;
+    width: 670px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 300px;
+}
+
+.data{
+    background-color: orange;
+    height: 300px;
+    width: 650px;
+}
+h1{
+    color: red;
+}
+h3{
+    color: green;
+}
+p{
+    color: blue;
+}
+button{
+   background-color: yellow;
+}
