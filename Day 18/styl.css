@@ -1,17 +1,12 @@
-.main{
-    background-color: black;
+body{
     text-align: center;
-    height: 400px;
-    width: 670px;
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-left: 300px;
 }
-
-.data{
+div{
     background-color: orange;
-    height: 300px;
-    width: 650px;
+    width: 40vw;
+    height: 50vh;
+    padding-top: 1vh;
+    margin-left: 25vw;
 }
 h1{
     color: red;
@@ -23,5 +18,5 @@ p{
     color: blue;
 }
 button{
-   background-color: yellow;
+    background-color: yellow;
 }
