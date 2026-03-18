@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+div{
+    background-color: orange;
+    width: 40vw;
+    height: 50vh;
+    padding-top: 1vh;
+    margin-left: 25vw;
+}
+h1{
+    color: red;
+}
+h3{
+    color: green;
+}
+p{
+    color: blue;
+}
+button{
+    background-color: yellow;
+}
