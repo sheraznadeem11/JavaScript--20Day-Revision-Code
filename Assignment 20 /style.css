@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+button{
+    color: red;
+    height: 40px;
+    width: 80px;
+    margin-bottom: 40px;
+}
+div{
+    border: 1px solid chocolate;
+    background-color: chocolate;
+    width: 500px;
+    height: 150px;
+    margin-left: 17rem;
+    padding-top: 90px;
+    border-radius: 6px;
+}
+
+
+
