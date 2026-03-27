@@ -7,10 +7,9 @@ function getResult(rollNo){
     })
 }
 
-async function result() {
+(async function result() {
     await getResult(1);
     await getResult(2);
     await getResult(3);   
-}
+})();
 
-result();
