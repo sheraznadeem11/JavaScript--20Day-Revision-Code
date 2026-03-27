@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arail,sans-serif;
+    background: linear-gradient(to right , #6dd5ed,#1c7e96);
+    color: #fff;
+    text-align: center;
+}
+
+.container{
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search-bar button{
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font: 1rem;
+    margin-left: 5px;
+}
+.search-bar button:hover{
+    background: #39873c;
+}
+.search-bar input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.error-message{
+    color: #ff4d4d;
+    font: 1rem;
+    margin-bottom: 20px;
+}
+.weather-info{
+    margin-top: 20px;
+}
+.weather-info h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.condition{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffb74d;
+
+}
+.condition i{
+    font-size: 3rem;
+    margin-right: 10px;
+}
+
+.details{
+    font-size: 1.7rem;
+    text-align: left;
+
+}
+.details div{
+    margin: 10px 0;
+}
+.hidden{
+    display: none;
+}
+
+p{
+    font-size: .8rem;
+    color: orange;
+    text-align: right;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Checker</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city Name" />
+        <button id="searchBtn"><i class="fa-brands fa-sistrix"></i></button>
+      </div>
+      <div id="error" class="error-message"></div>
+      <div id="weatherInfo" class="weather-info hidden">
+        <h2 id="cityName" >Lahore</h2>
+        <div id="condition" class="condition"></div>
+        <div class="details">
+            <div><i class="fa-solid fa-temperature-full"></i> <span id="termerature"> </span> °C </div>
+            <div><i class="fa-solid fa-wind"></i> <span id="windSpeed"> </span>  km/h</div>
+            <div><i class="fa-solid fa-droplet"></i> <span id="humidity"></span> %Humidity</div>
+            <p>Made Buy Sheraz Nadeem</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
