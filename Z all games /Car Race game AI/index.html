@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Race</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Car Racing Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-    <div class="score">Score: <span id="score">0</span></div>
 
+<div class="game-container">
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <div class="scoreboard">Score: <span id="score">0</span></div>
+        <div class="speedometer">Speed: <span id="speedMeter">5</span></div>
+        <div class="levelMeter">Level: <span id="level">1</span></div>
+    </div>
+
+    <!-- Start Screen -->
     <div class="start-screen" id="startScreen">
-        <h1>🚗 Car Racing</h1>
-        <p>Use Arrow Keys to Move</p>
+        <h1>🏎️ Pro Racing Game</h1>
+        <p>Use Arrow Keys to Move | Space to Jump</p>
         <button onclick="startGame()">Start Game</button>
     </div>
 
+    <!-- Road -->
     <div class="road" id="road">
-        <div class="car" id="player"></div>
+        <img src="carim.png" class="player-car" id="player">
     </div>
+
 </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
