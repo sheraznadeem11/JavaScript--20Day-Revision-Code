@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game Container */
+.game-container {
+    width: 320px;
+    height: 550px;
+    background: #222;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Road */
+.road {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#555, #333);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Lane Lines */
+.line {
+    width: 10px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Player Car */
+.car {
+    width: 50px;
+    height: 90px;
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    position: absolute;
+    bottom: 20px;
+    left: 135px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f260;
+}
+
+/* Enemy Cars */
+.enemy {
+    width: 50px;
+    height: 90px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    position: absolute;
+    top: -100px;
+    border-radius: 10px;
+}
+
+/* Score */
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 10;
+}
+
+/* Start Screen */
+.start-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+    text-align: center;
+}
+
+.start-screen button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    background: #00f260;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
