@@ -5,41 +5,76 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* BODY – outside game container */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #1b2735, #090a0f);
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    position: relative;
+    animation: bgGradient 25s ease-in-out infinite alternate;
 }
 
-/* Game container */
+/* Moving gradient animation */
+@keyframes bgGradient {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 50% 100%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating colored spot – lightweight, smooth */
+body::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(circle, rgba(0,255,128,0.1), transparent 80%);
+    pointer-events: none;
+    z-index: 1;
+    animation: floatSpots 40s linear infinite;
+}
+
+@keyframes floatSpots {
+    0% { transform: translate(0,0) rotate(0deg); }
+    50% { transform: translate(60px,60px) rotate(180deg); }
+    100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* Game Container stays above background */
 .game-container {
     width: 400px;
     height: 650px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.7);
+    box-shadow: 0 15px 60px rgba(0,0,0,0.7);
     background: linear-gradient(#555, #333);
+    z-index: 10;
 }
 
 /* Dashboard */
 .dashboard {
     position: absolute;
     width: 100%;
-    top: 5px;
+    top: 10px;
     display: flex;
     justify-content: space-around;
-    z-index: 10;
+    z-index: 11;
     color: #fff;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .dashboard div {
     background: rgba(0,0,0,0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 8px;
 }
 
 /* Start Screen */
@@ -57,15 +92,34 @@ body {
     text-align: center;
 }
 
+.start-screen h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #00f260;
+    text-shadow: 0 0 15px #00f260;
+}
+
+.start-screen p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
 .start-screen button {
-    padding: 12px 25px;
-    margin-top: 15px;
+    padding: 14px 28px;
     border: none;
     background: #00f260;
-    color: black;
-    border-radius: 8px;
-    cursor: pointer;
+    color: #000;
     font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.start-screen button:hover {
+    background: #00c14b;
+    transform: scale(1.05);
 }
 
 /* Road */
@@ -85,6 +139,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 3px;
 }
 
 /* Player Car */
@@ -94,7 +149,7 @@ body {
     bottom: 20px;
     left: 170px;
     z-index: 5;
-    transition: left 0.05s;
+    transition: left 0.05s linear, bottom 0.05s linear;
 }
 
 /* Enemy Cars */
@@ -104,5 +159,23 @@ body {
     position: absolute;
     top: -150px;
     z-index: 4;
-    border-radius: 10px;
+    border-radius: 12px;
+    background: red;
+    transition: left 0.05s linear;
+}
+
+/* Pause Overlay */
+.pause-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    display: none;
 }

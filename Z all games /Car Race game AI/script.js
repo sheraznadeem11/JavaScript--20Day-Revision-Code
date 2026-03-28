@@ -146,9 +146,16 @@ function moveEnemies(){
 
 // Move Player
 function movePlayer(){
+    // Horizontal
     if(keys["ArrowLeft"] && playerX>10) playerX -=5;
-    if(keys["ArrowRight"] && playerX<320) playerX +=5; // keep inside road
+    if(keys["ArrowRight"] && playerX<320) playerX +=5; 
+
+    // Vertical (forward/backward)
+    if(keys["ArrowUp"] && playerY<400) playerY +=5;  // move up
+    if(keys["ArrowDown"] && playerY>20) playerY -=5; // move down
+
     player.style.left = playerX + "px";
+    player.style.bottom = playerY + "px";
 }
 
 // Collision detection with side buffer
@@ -167,4 +174,10 @@ function isFrontCollision(a,b){
                             aRect.left + horizontalMargin < bRect.right;
 
     return verticalOverlap && horizontalOverlap;
+}
+// Inside keydown
+if(e.key === "Enter" && gameRunning){
+    gamePaused = !gamePaused;
+    document.getElementById("pauseOverlay").style.display = gamePaused ? "flex" : "none";
+    if(!gamePaused) requestAnimationFrame(gameLoop);
 }
